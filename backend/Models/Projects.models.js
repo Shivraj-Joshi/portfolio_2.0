@@ -1,36 +1,44 @@
 import mongoose from "mongoose";
 
+
+// as we will perform crud operations on multiple projects , we'll store projects in an Array 
+
+
 const projectSchema = new mongoose.Schema(
     {
 
-        project: [
-
-            {
-                thumbnail: {
-                    type: String,
-                    required: true
-                },
-                name: {
-                    type: String,
-                    required: true
-                },
-                description: {
-                    type: String,
-                    required: true
-                },
-                liveLink: {
-                    type: String,
-                    required: true
-                },
-                githubLink: {
-                    type: String,
-                    required: true
-                },
 
 
 
-            }
-        ]
+        coverImage: {
+            type: String,
+            required: true
+        },
+        title: {
+            type: String,
+            required: true
+        },
+        shortDescription: {
+            type: String,
+            required: true
+        },
+        liveLink: {
+            type: String,
+            required: true
+        },
+        githubLink: {
+            type: String,
+            required: true
+        },
+
+        techUsed: {
+            type: true,
+            required: true
+        }
+
+
+
+
     },
     { timestamps: true });
 
