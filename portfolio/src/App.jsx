@@ -4,7 +4,7 @@ import Feats from "./Components/Feats";
 function App() {
   return (
     <>
-      <div className="main-container bg-black md:flex h-screen w-screen p-4">
+      <div className="main-container bg-black md:flex h-full w-full p-4">
         <Hero />
         <Feats />
       </div>

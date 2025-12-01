@@ -1,16 +1,15 @@
-import { request } from "express";
 import Project from "../Models/Projects.models";
 
 // function to get all the projects from DataBase 🗃️ 
 
-const getProject = async (req, res) => {
+const getProjects = async (req, res) => {
 
     try {
         const projects = await Project.find()
-        res.status(200).json(projects)
+        res.status(200).json({ success: true, data: projects })
 
     } catch (error) {
-        res.status(400).json({ message: error.message })
+        res.status(404).json({ message: error.message })
     }
 
 };
@@ -22,7 +21,7 @@ const addProject = async (req, res) => {
     try {
         const newProject = new Project(req.body)
         const savedPrject = await newProject.save();
-        res.status(200).json(newProject);
+        res.status(200).json(savedPrject);
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
