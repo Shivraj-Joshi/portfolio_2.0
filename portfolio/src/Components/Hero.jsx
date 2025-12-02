@@ -19,9 +19,9 @@ const Hero = () => {
     <>
       <div className="main-container bg-[#2092e9] h-auto w-full md:h-full md:w-[50%] p-2">
         <div className="profile-pic border-2 border-amber-300 p-3">
-          <div className="img p-1 border-white border-4 content-center">
+          <div className="img p-2 border-white border-4 flex justify-center">
             <img
-              className=" h-[280px] w-[350px] object-cover rounded-[50%]"
+              className=" h-[280px] w-[280px] object-cover rounded-full"
               src={profile}
               alt=""
             />
