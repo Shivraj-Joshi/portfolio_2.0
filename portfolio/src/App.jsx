@@ -1,5 +1,6 @@
 import Hero from "./Components/Hero";
 import Feats from "./Components/Feats";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Hero />
         <Feats />
       </div>
+      {/* <Footer /> */}
     </>
   );
 }

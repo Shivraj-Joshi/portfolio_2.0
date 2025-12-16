@@ -12,7 +12,7 @@ export default function CodeCardResponsive() {
   return (
     <div className="w-full flex justify-center px-4 sm:px-6 py-6">
       <div
-        className="bg-[#0a0f2d] text-white rounded-2xl shadow-2xl font-mono
+        className="bg-[#141414] text-white rounded-2xl shadow-2xl font-mono
                    w-full max-w-3xl
                    border border-transparent
                    overflow-hidden"
@@ -28,7 +28,7 @@ export default function CodeCardResponsive() {
           </div>
         </div>
 
-        <div className="border-t border-[#13203b]/50" />
+        <div className="border-t border-[#5237f9]/100" />
 
         {/* Code area */}
         <div
@@ -56,6 +56,13 @@ export default function CodeCardResponsive() {
               <span className="text-yellow-300">'MongoDB'</span>,{" "}
               <span className="text-yellow-300">'git'</span>,{" "}
               <span className="text-yellow-300">'GitHub'</span>],{"\n"}
+              &nbsp;&nbsp;<span className="text-white">email</span>:{" "}
+              <span className="text-teal-300">
+                'iamshivrajjoshi07@gmail.com'
+              </span>
+              ,{"\n"}
+              &nbsp;&nbsp;<span className="text-white">contact</span>:{" "}
+              <span className="text-teal-300">+91 7011797223</span>,{"\n"}
               &nbsp;&nbsp;<span className="text-white">smartWorker</span>:{" "}
               <span className="text-teal-300">true</span>,{"\n"}
               &nbsp;&nbsp;<span className="text-white">quickLearner</span>:{" "}

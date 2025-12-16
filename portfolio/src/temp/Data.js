@@ -20,6 +20,7 @@ const skills = [
 const project = [
 
     {
+        id: 1,
         image: image1,
         title: "AI chatBot",
         description: "this is an AI chat bot. Google gemini API is used to build it",
@@ -29,6 +30,7 @@ const project = [
 
     },
     {
+        id: 2,
         image: image1,
         title: "StyleClub",
         description: "this is an e-commerce store",
@@ -38,6 +40,7 @@ const project = [
 
     },
     {
+        id: 3,
         image: image1,
         title: "Portfolio",
         description: "this is my 1st portfolio",
