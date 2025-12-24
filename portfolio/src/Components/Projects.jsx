@@ -2,6 +2,8 @@ import React from "react";
 import { motion, scale } from "framer-motion";
 import { project } from "../temp/Data";
 
+//framer animations
+
 const container = {
   hidden: { opacity: 0 },
   visible: {
@@ -43,7 +45,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="md:grid grid-cols-2 gap-10 p-3"
+        className="flex flex-col md:grid grid-cols-2 gap-8 p-3"
       >
         {project.map((project) => (
           <motion.div

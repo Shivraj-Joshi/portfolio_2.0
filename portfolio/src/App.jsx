@@ -5,7 +5,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <div className="main-container bg-black md:flex h-full w-full p-4">
+      <div className="main-container bg-[#060606] md:flex h-full w-full p-4">
         <Hero />
         <Feats />
       </div>
