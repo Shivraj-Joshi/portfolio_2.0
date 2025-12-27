@@ -20,10 +20,10 @@ export default function ContactForm() {
               type="text"
               placeholder="Your name"
               className="
-                bg-[#555555] text-white
+                bg-[#181818] text-white
                 rounded-lg px-4 py-3
                 outline-none border border-transparent
-                focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+                focus:border-[#5237f9] focus:ring-1 focus:ring-[#5237f9]
                 transition
               "
             />
@@ -36,10 +36,10 @@ export default function ContactForm() {
               type="email"
               placeholder="you@example.com"
               className="
-                bg-[#555555] text-white
+                bg-[#181818] text-white
                 rounded-lg px-4 py-3
                 outline-none border border-transparent
-                focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+                focus:border-[#5237f9] focus:ring-1 focus:ring-[#5237f9]
                 transition
               "
             />
@@ -52,11 +52,11 @@ export default function ContactForm() {
               rows="5"
               placeholder="Your message..."
               className="
-                bg-[#555555] text-white
+                bg-[#181818] text-white
                 rounded-lg px-4 py-3
                 resize-none
                 outline-none border border-transparent
-                focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+                focus:border-[#5237f9] focus:ring-1 focus:ring-[#5237f9]
                 transition
               "
             />

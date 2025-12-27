@@ -9,7 +9,7 @@ function App() {
         <Hero />
         <Feats />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

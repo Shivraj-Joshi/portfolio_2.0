@@ -1,5 +1,6 @@
 import React from "react";
 import { skills } from "../temp/Data";
+
 const Skills = () => {
   return (
     <>
@@ -18,13 +19,18 @@ const Skills = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {skills
-                .find((item) => item.category === "Frontend")
-                ?.items?.map((skill) => (
+                .find((skill) => skill.category === "Frontend")
+                ?.skills?.map((skill) => (
                   <div
-                    key={skill}
-                    className="bg-green-700 text-white text-center py-2 px-3 rounded"
+                    key={skill.id}
+                    className="bg-[#181818] text-white text-center py-3 px-3 rounded flex flex-col items-center gap-1 transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400"
                   >
-                    {skill}
+                    <img
+                      src={skill.img}
+                      alt={skill.name}
+                      className=" h-10 items-center"
+                    />
+                    <p> {skill.name}</p>
                   </div>
                 ))}
             </div>
@@ -38,13 +44,18 @@ const Skills = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {skills
-                .find((item) => item.category === "Backend")
-                ?.items?.map((skill) => (
+                .find((skill) => skill.category === "Backend")
+                ?.skills?.map((skill) => (
                   <div
-                    key={skill}
-                    className="bg-green-700 text-white text-center py-2 px-3 rounded"
+                    key={skill.id}
+                    className="bg-[#181818] text-white text-center py-3 px-3 rounded flex flex-col items-center gap-1 transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400"
                   >
-                    {skill}
+                    <img
+                      src={skill.img}
+                      alt={skill.name}
+                      className=" h-10 items-center"
+                    />
+                    <p> {skill.name}</p>
                   </div>
                 ))}
             </div>
@@ -58,13 +69,18 @@ const Skills = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {skills
-                .find((item) => item.category === "devTools")
-                ?.items?.map((skill) => (
+                .find((skill) => skill.category === "devTools")
+                ?.skills?.map((skill) => (
                   <div
-                    key={skill}
-                    className="bg-green-700 text-white text-center py-2 px-3 rounded"
+                    key={skill.id}
+                    className="bg-[#181818] text-white text-center py-3 px-3 rounded flex flex-col items-center gap-1 transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400"
                   >
-                    {skill}
+                    <img
+                      src={skill.img}
+                      alt={skill.name}
+                      className=" h-10 items-center"
+                    />
+                    <p> {skill.name}</p>
                   </div>
                 ))}
             </div>
