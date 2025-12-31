@@ -39,6 +39,6 @@ const deleteProject = async (req, res) => {
     }
 }
 
-export { getProject, addProject, deleteProject };
+export { getProjects, addProject, deleteProject };
 
 
