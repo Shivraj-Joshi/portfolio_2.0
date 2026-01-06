@@ -1,5 +1,6 @@
-require('dotenv').config()
-const express = require('express')
+
+import 'dotenv/config'
+import express from "express"
 const app = express()
 const port = process.env.PORT
 
@@ -10,6 +11,17 @@ app.get('/page', (req, res) => {
     res.send('the server is working fine')
 })
 
-app.listen(process.env.PORT, () => {
+
+// import routes here 
+
+import adminRouter from "./Routes/adminAuth.routes.js"
+
+// route decleration 
+
+app.use("/api/v1/admin", adminRouter);
+
+app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+console.log(port)
