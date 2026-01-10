@@ -4,9 +4,13 @@ import express from "express"
 const app = express()
 const port = process.env.PORT
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+try {
+    app.get('/', (req, res) => {
+        res.send('Hello World!')
+    })
+} catch (error) {
+    console.log(error)
+}
 app.get('/page', (req, res) => {
     res.send('the server is working fine')
 })
